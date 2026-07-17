@@ -16,7 +16,8 @@
       "Read(//Users/itsuki/Desktop/coreai-models/python/src/coreai_models/**)",
       "Bash(PYTHONNOUSERSITE=1 PYTHONPATH= uv run --isolated --python 3.11 --with coreai-core==1.0.0b2 --with coreai-torch==0.4.1 --with torch==2.9.0 --with transformers==5.13.1 --with numpy python /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_attn.py)",
       "Bash(sed -i '' -e 's|dyn = {\"q\": {2: torch.export.Dim\\(\"ql\", max=30\\)}, \"k\": None, \"v\": None}|dyn = None|' -e 's|dyn = {\"x\": {2: torch.export.Dim\\(\"ql\", max=30\\)}, \"position_ids\": {1: torch.export.Dim\\(\"pl\", max=30\\)}}|dyn = None|' /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_split.py)",
-      "Bash(PYTHONNOUSERSITE=1 PYTHONPATH= uv run --isolated --python 3.11 --with coreai-core==1.0.0b2 --with coreai-torch==0.4.1 --with torch==2.9.0 --with transformers==5.13.1 --with numpy python /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_split.py)"
+      "Bash(PYTHONNOUSERSITE=1 PYTHONPATH= uv run --isolated --python 3.11 --with coreai-core==1.0.0b2 --with coreai-torch==0.4.1 --with torch==2.9.0 --with transformers==5.13.1 --with numpy python /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_split.py)",
+      "Read(//Applications/DeriveData/**)"
     ]
   }
 }

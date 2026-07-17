@@ -7,7 +7,7 @@
 
 ## Installation
 
-You can either download the entire repository and run/build it with Xcode or you can download the latest signed `dmg` for the app from the [GitHub release page](https://github.com/0Itsuki0/PrivateTranscriber/releases).
+You can either download the entire repository and run/build it with Xcode or you can download the latest signed `app` for the app from the [GitHub release page](https://github.com/0Itsuki0/PrivateTranscriber/releases).
 
 
 ## Features

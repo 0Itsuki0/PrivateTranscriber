@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import MLX
 import MLXAudioCore
 import MLXAudioLID
 
