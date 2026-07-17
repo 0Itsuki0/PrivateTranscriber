@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(mdfind -name \"CoreAI.framework\")",
+      "Bash(uv run --python 3.11 --with coreai-core==1.0.0b2 python -c ' *)",
+      "Bash(afinfo /Users/itsuki/Desktop/test.wav)",
+      "Bash(afconvert -f WAVE -d LEI16@16000 -c 1 /Users/itsuki/Desktop/test.wav /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/test_16k.wav)",
+      "Bash(afinfo /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/test_16k.wav)",
+      "Bash(uv run *)",
+      "Bash([ -f \"$SCRATCH/test_16k.wav\" ])",
+      "Bash(curl -s https://pypi.org/pypi/transformers/json)",
+      "Bash(awk '/class Qwen3ASREncoder\\\\\\(/,/^class [A-Z]/' /Users/itsuki/.cache/uv/environments-v2/create-qwen3-asr-28baca12f24e110d/lib/python3.11/site-packages/transformers/models/qwen3_asr/modeling_qwen3_asr.py)",
+      "Read(//Users/itsuki/Desktop/coreai-models/models/**)",
+      "Read(//Users/itsuki/Desktop/coreai-models/python/src/coreai_models/**)",
+      "Bash(PYTHONNOUSERSITE=1 PYTHONPATH= uv run --isolated --python 3.11 --with coreai-core==1.0.0b2 --with coreai-torch==0.4.1 --with torch==2.9.0 --with transformers==5.13.1 --with numpy python /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_attn.py)",
+      "Bash(sed -i '' -e 's|dyn = {\"q\": {2: torch.export.Dim\\(\"ql\", max=30\\)}, \"k\": None, \"v\": None}|dyn = None|' -e 's|dyn = {\"x\": {2: torch.export.Dim\\(\"ql\", max=30\\)}, \"position_ids\": {1: torch.export.Dim\\(\"pl\", max=30\\)}}|dyn = None|' /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_split.py)",
+      "Bash(PYTHONNOUSERSITE=1 PYTHONPATH= uv run --isolated --python 3.11 --with coreai-core==1.0.0b2 --with coreai-torch==0.4.1 --with torch==2.9.0 --with transformers==5.13.1 --with numpy python /private/tmp/claude-501/-Users-itsuki-Desktop-MyProject-PrivateTranscriber/d8bba18f-f93a-44f1-b9dd-af1983959edd/scratchpad/min_split.py)"
+    ]
+  }
+}
