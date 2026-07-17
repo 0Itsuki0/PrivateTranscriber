@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		985985BE3004A8AD00D83276 /* MLXAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 985985BD3004A8AD00D83276 /* MLXAudio */; };
 		985985C03004A8B200D83276 /* MLXAudioCore in Frameworks */ = {isa = PBXBuildFile; productRef = 985985BF3004A8B200D83276 /* MLXAudioCore */; };
+		9884AFEE3009B30200DBCA20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9884AFED3009B30200DBCA20 /* README.md */; };
+		9884B0853009B66100DBCA20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9884B0843009B66100DBCA20 /* LICENSE */; };
+		9884B0863009B66100DBCA20 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9884B0833009B66100DBCA20 /* .gitignore */; };
 		98903B8D300482FD0096AEBA /* MLXAudioSTT in Frameworks */ = {isa = PBXBuildFile; productRef = 98903B8C300482FD0096AEBA /* MLXAudioSTT */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9884AFED3009B30200DBCA20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9884B0833009B66100DBCA20 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9884B0843009B66100DBCA20 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		98903B7D3004822E0096AEBA /* PrivateTranscriber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateTranscriber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +52,9 @@
 		98903B743004822E0096AEBA = {
 			isa = PBXGroup;
 			children = (
+				9884B0833009B66100DBCA20 /* .gitignore */,
+				9884B0843009B66100DBCA20 /* LICENSE */,
+				9884AFED3009B30200DBCA20 /* README.md */,
 				98903B7F3004822E0096AEBA /* PrivateTranscriber */,
 				985985BC3004A8AD00D83276 /* Frameworks */,
 				98903B7E3004822E0096AEBA /* Products */,
@@ -127,6 +136,9 @@
 		98903B7B3004822E0096AEBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				9884B0853009B66100DBCA20 /* LICENSE in Resources */,
+				9884B0863009B66100DBCA20 /* .gitignore in Resources */,
+				9884AFEE3009B30200DBCA20 /* README.md in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
