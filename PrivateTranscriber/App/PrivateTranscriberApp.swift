@@ -38,6 +38,8 @@ struct PrivateTranscriberApp: App {
                             || AVAudioApplication.shared.recordPermission
                                 != .granted
                         {
+                            // a little wait before opening the setting window
+                            try? await Task.sleep(nanoseconds: 1_000)
                             EnvironmentValues().openSettings()
                         }
                     }
