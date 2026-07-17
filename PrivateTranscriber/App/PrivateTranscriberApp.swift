@@ -5,6 +5,7 @@
 //  Created by Itsuki on 2026/07/13.
 //
 
+import AVFoundation
 import SwiftUI
 
 @main
@@ -31,6 +32,15 @@ struct PrivateTranscriberApp: App {
             },
             label: {
                 Image(systemName: "waveform.badge.microphone")
+                    .task {
+                        if (try? AccessibilityService
+                            .checkAccessibilityPermission()) == nil
+                            || AVAudioApplication.shared.recordPermission
+                                != .granted
+                        {
+                            EnvironmentValues().openSettings()
+                        }
+                    }
             }
         )
         .menuBarExtraStyle(.window)

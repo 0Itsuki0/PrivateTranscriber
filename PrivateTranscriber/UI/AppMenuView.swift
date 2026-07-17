@@ -5,8 +5,8 @@
 //  Created by Itsuki on 2026/07/01.
 //
 
-import SwiftUI
 import AVFoundation
+import SwiftUI
 
 struct AppMenuView: View {
     @Environment(UserSettings.self) private var userSettings
@@ -49,10 +49,11 @@ struct AppMenuView: View {
             .controlSize(.small)
             .toggleStyle(.switch)
             .onChange(of: userSettings.formattingEnabled) {
-                transcriptionManager.formattingEnabledUpdate(userSettings.formattingEnabled)
+                transcriptionManager.formattingEnabledUpdate(
+                    userSettings.formattingEnabled
+                )
             }
-            
-            
+
             Divider()
 
             Button(
@@ -84,12 +85,6 @@ struct AppMenuView: View {
         .padding(.vertical, 12)
         .padding(.horizontal, 16)
         .frame(width: 240)
-        .onAppear {
-            if (try? AccessibilityService.checkAccessibilityPermission()) == nil ||
-                AVAudioApplication.shared.recordPermission != .granted {
-                self.openSettings()
-            }
-        }
     }
 
 }

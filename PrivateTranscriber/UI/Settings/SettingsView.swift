@@ -231,7 +231,11 @@ struct SettingsView: View {
                 window.makeKey()
             }
         }
-
+        .onChange(of: self.hotkeyPermission) {
+            if hotkeyPermission {
+                transcriptionManager.onAccessibilityPermissionGranted()
+            }
+        }
     }
 
     private func refreshPermissionStates() {
@@ -283,7 +287,8 @@ private struct TranscriptionLocaleSelectionView: View {
                     Button(
                         action: {
                             if selected {
-                                selectedLocale.removeAll(where: { $0 == locale })
+                                selectedLocale.removeAll(where: { $0 == locale }
+                                )
                             } else {
                                 if !selectedLocale.contains(locale) {
                                     selectedLocale.append(locale)
@@ -293,7 +298,10 @@ private struct TranscriptionLocaleSelectionView: View {
                         label: {
                             HStack {
                                 Text(locale.identifier)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .frame(
+                                        maxWidth: .infinity,
+                                        alignment: .leading
+                                    )
 
                                 Image(
                                     systemName: selected
@@ -310,9 +318,15 @@ private struct TranscriptionLocaleSelectionView: View {
                 }
             } header: {
                 Text("Selected locales")
-                
-                Text(self.selectedLocale.isEmpty ? "(none)" : self.selectedLocale.map(\.identifier).joined(separator: ", "))
-                    .font(.subheadline)
+
+                Text(
+                    self.selectedLocale.isEmpty
+                        ? "(none)"
+                        : self.selectedLocale.map(\.identifier).joined(
+                            separator: ", "
+                        )
+                )
+                .font(.subheadline)
             }
         }
         .formStyle(.grouped)

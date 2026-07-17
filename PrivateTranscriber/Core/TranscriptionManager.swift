@@ -176,7 +176,7 @@ class TranscriptionManager {
         self.overlayPanel = nil
     }
 
-    func handleHotkeyDetected(_ isDown: Bool) {
+    private func handleHotkeyDetected(_ isDown: Bool) {
         guard !self.configuringHotkey else { return }
         switch self.activationType {
         case .hold:
